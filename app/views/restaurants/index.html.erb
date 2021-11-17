@@ -1,0 +1,30 @@
+<h1>All Restaurants:</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+        <th>Category</th>
+        <th colspan="4"></th>
+      </tr>
+    </thead>
+
+  <tbody>
+      <% @restaurants.each do |restaurant| %>
+        <tr>
+          <td><%= restaurant.name %></td>
+          <td><%= restaurant.address %></td>
+          <td><%= restaurant.phone_number %></td>
+          <td><%= restaurant.category %></td>
+          <td><%= link_to restaurant do%>
+          <i class="fas fa-search"></i>
+          <% end %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+    <%= link_to new_restaurant_path do%>
+    <i class="fas fa-plus-circle"></i>
+    <% end %></td>

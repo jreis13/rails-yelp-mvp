@@ -1,0 +1,40 @@
+// Specific CSS for your home-page
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.fa-search, .fa-arrow-circle-left, .fa-plus-circle, .fa-edit {
+  color: black;
+  font-size: 23px;
+}
+
+.fa-search:hover, .fa-arrow-circle-left:hover, .fa-plus-circle:hover, .fa-edit:hover {
+  opacity: 0.7;
+}
+
+.btn-primary {
+  margin-bottom: 15px;
+  font-weight: bolder;
+  background-color: black;
+  border-color: white;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: white;
+  opacity: 0.7;
+}
+
+html, body, h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  align-content: space-between;
+}
